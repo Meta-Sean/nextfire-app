@@ -5,7 +5,7 @@ https://fireship.io/
 
 
 ## Fullstack server-rendered webapp with React, Next.js, and Firebase
-the next js team is also super goat'd there framework and tutorials make learning fun
+the next js team is also super goat'd their framework and tutorials make learning fun
 
 ## Check out the site and add some shit
 https://nextfire-app-one.vercel.app/
