@@ -4457,7 +4457,7 @@
   "resolved" "https://registry.npmjs.org/react-firebase-hooks/-/react-firebase-hooks-2.2.0.tgz"
   "version" "2.2.0"
 
-"react-hook-form@^6.14.2":
+"react-hook-form@^6.15.8":
   "integrity" "sha512-prq82ofMbnRyj5wqDe8hsTRcdR25jQ+B8KtCS7BLCzjFHAwNuCjRwzPuP4eYLsEBjEIeYd6try+pdLdw0kPkpg=="
   "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-6.15.8.tgz"
   "version" "6.15.8"

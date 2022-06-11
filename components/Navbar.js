@@ -30,7 +30,7 @@ export default function Navbar({ }) {
                         <li className='push-left'>
                             <button onClick={signOut}>Sign Out</button>
                         </li>
-                        <li className='push-left'>
+                        <li>
                             <Link href="/admin">
                                 <button className='btn-blue'>Write posts</button>
                             </Link>

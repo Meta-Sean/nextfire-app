@@ -2,6 +2,9 @@ import styles from '../../styles/Post.module.css';
 import PostContent from '../../components/PostContent';
 import { firestore, getUserWithUsername, postToJSON } from '../../lib/firebase';
 import { useDocumentData } from 'react-firebase-hooks/firestore';
+import HeartButton from '../../components/HeartButton';
+import AuthCheck from '../../components/AuthCheck';
+import Link from 'next/link';
 
 
 export async function getStaticProps({ params }) {
@@ -61,8 +64,18 @@ export default function Post(props) {
 
       <aside className='card'>
         <p>
-          <strong>{post.heartCount || 0} 🤍 </strong>
+          <strong>{post.heartCount || 0} 💗 </strong>
         </p>
+
+        <AuthCheck
+          fallback={
+            <Link href='/enter'>
+              <button>💗 Sign Up</button>
+            </Link>
+          }
+        >
+          <HeartButton postRef={postRef} />
+        </AuthCheck>
       </aside>
     </main>
   );
