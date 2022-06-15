@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useContext, useState, useCallback, useEffect } from 'react';
 import { UserContext } from '../lib/context';
 import debounce from 'lodash.debounce';
+import Metatags from '../components/Metatags'
 
 export default function EnterPage(props) {
   const { user, username } = useContext(UserContext)
@@ -12,8 +13,9 @@ export default function EnterPage(props) {
   // 3. user signed in, has username <SignOutButton />
   return (
     <main>
+      <Metatags title="Enter" description="Sign up for this amazing app!" />
       {user ? 
-        !username ? <UsernameForm /> : <SignOutButton /> 
+        !username ? <UsernameForm /> : <SignOutButton />
         : 
         <SignInButton />
       }
