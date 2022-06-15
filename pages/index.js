@@ -56,7 +56,7 @@ export default function Home(props) {
   return (
     <div>
       <Metatags title="home" />
-      <button onClick={() => toast.success('hello toast!')}>
+      <button onClick={() => toast.success('lmeow!')}>
         Toast Me
       </button>
       <main>
