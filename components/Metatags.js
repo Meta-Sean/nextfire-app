@@ -3,7 +3,7 @@ import Head from 'next/head';
 export default function Metatags({
     title = 'nextfire meta-sean take on fireship tutorial',
     description = 'A complete Next.js + Firebase course by Fireship.io and thoughtfully completed by meta-sean',
-    image = 'https://fireship.io/courses/react-next-firebase/img/featured.png',
+    image = 'dogo.png',
 }) {
     return (
         <Head>
